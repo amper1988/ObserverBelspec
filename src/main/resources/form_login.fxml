@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<GridPane alignment="center" hgap="10" prefHeight="298.0" prefWidth="379.0" vgap="10" xmlns="http://javafx.com/javafx/8"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <padding>
+        <Insets bottom="10" left="25" right="25" top="25"/>
+    </padding>
+    <Text text="Введите данные для регистрации в системе" GridPane.columnIndex="0" GridPane.columnSpan="2"
+          GridPane.rowIndex="0"/>
+
+    <Label text="Имя пользователя" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+    <TextField fx:id="txfName" promptText="Имя пользователя" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="Пароль пользователя" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+    <PasswordField fx:id="pwfPwd" promptText="Пароль пользователя" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button fx:id="btnSend" text="Подключиться"/>
+    </HBox>
+
+    <Text fx:id="txtResult" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+</GridPane>

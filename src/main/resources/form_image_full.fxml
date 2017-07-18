@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<VBox fx:id="vbFull" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ControllerFormImageFull">
+    <children>
+        <HBox alignment="TOP_CENTER">
+            <VBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </VBox.margin>
+            <children>
+                <ScrollPane>
+                    <content>
+                        <Group>
+                            <children>
+                                <ImageView fx:id="imvImage" pickOnBounds="true" preserveRatio="true"
+                                           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                           AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                            </children>
+                        </Group>
+                    </content>
+                </ScrollPane>
+            </children>
+        </HBox>
+        <HBox alignment="BOTTOM_CENTER">
+            <children>
+                <Button fx:id="btnIncrease" mnemonicParsing="false" text="+">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="btnDecrease" mnemonicParsing="false" text="-">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="btnTrueSize" mnemonicParsing="false" text="&lt;&gt;">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="btnSave" mnemonicParsing="false" text="Сохранить">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</VBox>

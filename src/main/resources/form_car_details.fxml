@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerFormCarDetails">
+    <children>
+        <ScrollPane minHeight="768.0" minWidth="1024.0" opacity="0.75" prefHeight="928.0" prefWidth="1287.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <content>
+                <BorderPane fx:id="brdpFull" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                    <top>
+                        <VBox fx:id="vbTop" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" style="-fx-border-style: solid; -fx-border-radius: 8px;" BorderPane.alignment="CENTER">
+                            <children>
+                                <HBox prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <Label fx:id="lblManufTitle" text="Марка">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="lblStatus" text="Статус">
+                                            <padding>
+                                                <Insets left="10.0" />
+                                            </padding>
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                            <BorderPane.margin>
+                                <Insets bottom="15.0" left="5.0" right="5.0" top="5.0" />
+                            </BorderPane.margin>
+                        </VBox>
+                    </top>
+                    <left>
+                        <VBox fx:id="vbLeft" style="-fx-border-style: solid; -fx-border-radius: 8px;" BorderPane.alignment="CENTER">
+                            <children>
+                                <FlowPane style="-fx-border-style: solid; -fx-border-radius: 8px;">
+                                    <children>
+                                        <VBox style="-fx-border-style: solid; -fx-border-radius: 8px;">
+                                            <children>
+                                                <ImageView fx:id="imvImage1" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                                            </children>
+                                            <FlowPane.margin>
+                                                <Insets bottom="15.0" left="35.0" right="15.0" top="15.0" />
+                                            </FlowPane.margin>
+                                        </VBox>
+                                        <VBox style="-fx-border-style: solid; -fx-border-radius: 8px;">
+                                            <children>
+                                                <ImageView fx:id="imvImage2" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                                            </children>
+                                            <FlowPane.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                            </FlowPane.margin>
+                                        </VBox>
+                                        <VBox style="-fx-border-style: solid; -fx-border-radius: 8px;">
+                                            <children>
+                                                <ImageView fx:id="imvImage3" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                                            </children>
+                                            <FlowPane.margin>
+                                                <Insets bottom="15.0" left="35.0" right="15.0" top="15.0" />
+                                            </FlowPane.margin>
+                                        </VBox>
+                                        <VBox style="-fx-border-style: solid; -fx-border-radius: 8px;">
+                                            <children>
+                                                <ImageView fx:id="imvImage4" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+                                            </children>
+                                            <FlowPane.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                            </FlowPane.margin>
+                                        </VBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </FlowPane>
+                                <VBox>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label text="Панель действий" underline="true">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                        </Label>
+                                        <HBox>
+                                            <children>
+                                                <VBox style="-fx-border-style: solid; -fx-border-radius: 8px;">
+                                                    <children>
+                                                        <Button fx:id="btnBlock" layoutX="15.0" layoutY="185.0" mnemonicParsing="false" prefWidth="200.0" text="Наложить арест">
+                                                            <VBox.margin>
+                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                            </VBox.margin>
+                                                        </Button>
+                                                        <Button fx:id="btnBlockFree" layoutX="15.0" layoutY="115.0" mnemonicParsing="false" prefWidth="200.0" text="Снять арест">
+                                                            <VBox.margin>
+                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                            </VBox.margin>
+                                                        </Button>
+                                                    </children>
+                                                </VBox>
+                                                <VBox style="-fx-border-style: solid; -fx-border-radius: 8px;">
+                                                    <children>
+                                                        <Button fx:id="btnTakePhotos" mnemonicParsing="false" prefWidth="200.0" text="Распечатать фотографии">
+                                                            <VBox.margin>
+                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                            </VBox.margin>
+                                                        </Button>
+                                                    </children>
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                            <BorderPane.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </BorderPane.margin>
+                        </VBox>
+                    </left>
+                    <center>
+                        <VBox fx:id="vbCenter" minWidth="400.0" style="-fx-border-style: solid; -fx-border-radius: 8px;" BorderPane.alignment="CENTER">
+                            <children>
+                                <VBox style="-fx-border-style: solid; -fx-border-radius: 8px;">
+                                    <children>
+                                        <Label text="Данные транспортного средства" underline="true">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                            </VBox.margin>
+                                            <padding>
+                                                <Insets left="5.0" right="5.0" />
+                                            </padding>
+                                        </Label>
+                                        <HBox>
+                                            <children>
+                                                <Label text="Марка">
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <Label fx:id="lblManufacture" underline="true">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets left="10.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox layoutX="10.0" layoutY="62.0">
+                                            <children>
+                                                <Label text="Модель" />
+                                                <Label fx:id="lblModel" underline="true">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets left="10.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox layoutX="10.0" layoutY="162.0">
+                                            <children>
+                                                <Label text="Цвет" />
+                                                <Label fx:id="lblColor" underline="true">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                        </HBox>
+                                        <HBox layoutX="10.0" layoutY="62.0">
+                                            <children>
+                                                <Label text="Регистрационный знак" />
+                                                <Label fx:id="lblCarId" underline="true">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                        </HBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </VBox>
+                                <VBox style="-fx-border-style: solid; -fx-border-radius: 8px;">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label text="Данные ГАИ" underline="true">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="10.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <HBox>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <children>
+                                                <Label text="Район ГАИ">
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <Label fx:id="lblPoliceDepartment" underline="true">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="16.0" layoutY="58.0">
+                                            <children>
+                                                <Label text="Сотрудник">
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <Label fx:id="lblPoliceman" underline="true">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox style="-fx-border-style: solid; -fx-border-radius: 8px;">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label text="Данные эвакуации" underline="true">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                        </Label>
+                                        <HBox>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <children>
+                                                <Label text="Номер протокола">
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <Label fx:id="lblProtocolNumber" underline="true">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="16.0" layoutY="41.0">
+                                            <children>
+                                                <Label text="Статья нарушения (КоАП)">
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <Label fx:id="lblClause" underline="true">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                              <HBox layoutX="16.0" layoutY="58.0">
+                                 <children>
+                                    <Label text="Пункт ПДД">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="lblRoadLawPoint" underline="true">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets left="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                                        <HBox layoutX="11.0" layoutY="58.0">
+                                            <children>
+                                                <Label text="Эвакуирован">
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <Label fx:id="lblEvacuatedBool" underline="true">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox fx:id="hbEvacuationOrganization" layoutX="11.0" layoutY="58.0">
+                                            <children>
+                                                <Label text="Эвакуирующая организация">
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <Label fx:id="lblEvacuationOrganization" underline="true">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox fx:id="hbEvacuationAddress" layoutX="11.0" layoutY="58.0">
+                                            <children>
+                                                <Label text="Адрес откуда эвакуировали">
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <Label fx:id="lblAddressFrom" underline="true">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox fx:id="hbWrecker" layoutX="11.0" layoutY="92.0">
+                                            <children>
+                                                <Label text="ФИО водителя эвакуатора">
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <Label fx:id="lblWrecker" underline="true">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox fx:id="hbEvacuationDate" layoutX="16.0" layoutY="126.0">
+                                            <children>
+                                                <Label text="Дата эвакуации">
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <Label fx:id="lblEvacuationDate" underline="true">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox fx:id="vbStoringData" style="-fx-border-style: solid; -fx-border-radius: 8px;">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label text="Данные о приеме на стоянку" underline="true">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                        </Label>
+                                        <HBox>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <children>
+                                                <Label text="Организация хранения" />
+                                                <Label fx:id="lblStorageOrganization" underline="true">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="16.0" layoutY="41.0">
+                                            <children>
+                                                <Label text="ФИО принявшего" />
+                                                <Label fx:id="lblWhoTook" underline="true">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox layoutX="16.0" layoutY="41.0">
+                                            <children>
+                                                <Label text="Адрес стоянки" />
+                                                <Label fx:id="lblParkingAddress" underline="true">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox layoutX="11.0" layoutY="58.0">
+                                            <children>
+                                                <Label text="Дата постановки" />
+                                                <Label fx:id="lblParkingDate" underline="true">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="12.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="5.0" />
+                                                    </padding>
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                            <padding>
+                                                <Insets left="5.0" />
+                                            </padding>
+                                            <VBox.margin>
+                                                <Insets left="5.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                            <BorderPane.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </BorderPane.margin>
+                        </VBox>
+                    </center>
+                    <right>
+                        <VBox fx:id="vbRight" style="-fx-border-style: solid; -fx-border-radius: 8px;" BorderPane.alignment="CENTER">
+                            <BorderPane.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </BorderPane.margin>
+                            <children>
+                                <VBox style="-fx-border-style: solid; -fx-border-radius: 8px;">
+                                    <children>
+                                        <WebView fx:id="wvMaps" minHeight="-1.0" minWidth="-1.0" prefHeight="400.0" prefWidth="400.0" />
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </VBox.margin>
+                                </VBox>
+                            </children>
+                        </VBox>
+                    </right>
+                </BorderPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

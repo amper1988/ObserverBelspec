@@ -1,0 +1,39 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Belspec">
+    <output-path>$PROJECT_DIR$/out/artifacts/Belspec</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="alias" value="" />
+        <option name="appClass" value="Main" />
+        <option name="description" value="" />
+        <option name="height" value="768" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="windowsIcon" value="$PROJECT_DIR$/src/main/resources/favicon.ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="keystore" value="" />
+        <option name="nativeBundle" value="exe" />
+        <option name="title" value="watchman" />
+        <option name="vendor" value="belspec" />
+        <option name="version" value="1.0.0" />
+        <option name="width" value="1024" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Belspec.jar">
+        <element id="module-output" name="Belspec" />
+      </element>
+      <element id="library" level="project" name="Gradle: com.squareup.okhttp3:logging-interceptor:3.2.0" />
+      <element id="library" level="project" name="Gradle: com.squareup.okhttp3:okhttp-urlconnection:3.2.0" />
+      <element id="library" level="project" name="Gradle: com.squareup.okhttp3:okhttp:3.3.0" />
+      <element id="library" level="project" name="Gradle: com.squareup.okio:okio:1.8.0" />
+      <element id="library" level="project" name="Gradle: com.squareup.retrofit2:converter-simplexml:2.1.0" />
+      <element id="library" level="project" name="Gradle: com.squareup.retrofit2:retrofit:2.1.0" />
+      <element id="library" level="project" name="Gradle: org.simpleframework:simple-xml:2.7.1" />
+      <element id="module-output" name="Belspec_main" />
+      <element id="library" level="project" name="Gradle: org.controlsfx:controlsfx:8.40.12" />
+    </root>
+  </artifact>
+</component>

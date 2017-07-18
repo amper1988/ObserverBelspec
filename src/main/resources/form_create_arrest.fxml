@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.60"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerFormCreateArrest">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0"/>
+        <ColumnConstraints hgrow="SOMETIMES"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="30.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <Label text="Кто арестовал" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </GridPane.margin>
+        </Label>
+        <Label text="Основание ареста" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </GridPane.margin>
+        </Label>
+        <TextField fx:id="txtWhoArrested" promptText="Данные, о том кто наложил арест" GridPane.columnIndex="1"
+                   GridPane.rowIndex="1"/>
+        <TextField fx:id="txtArrestReason" promptText="Наменование документа и дата наложения ареста"
+                   GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Button fx:id="btnArrest" mnemonicParsing="false" text="Наложить арест" GridPane.columnIndex="1"
+                GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets bottom="5.0" left="200.0" right="5.0" top="5.0"/>
+            </GridPane.margin>
+        </Button>
+        <Label text="Введите данные об аресте" GridPane.columnSpan="2">
+            <GridPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </GridPane.margin>
+        </Label>
+    </children>
+</GridPane>

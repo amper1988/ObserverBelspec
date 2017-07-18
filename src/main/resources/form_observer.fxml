@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<GridPane hgap="10.0" minHeight="1380.0" minWidth="800.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerFormObserver">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="70.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+              <AnchorPane GridPane.columnSpan="2">
+                      <VBox prefHeight="477.0" prefWidth="170.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <Label text="На эвакуации">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                              <TextField fx:id="txtOnEvacuationSearch" promptText="Введите параметры и нажмите Enter">
+                                  <VBox.margin>
+                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                  </VBox.margin>
+                              </TextField>
+                              <TableView fx:id="tblOnEvacuation" VBox.vgrow="ALWAYS">
+                                  <columnResizePolicy>
+                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                  </columnResizePolicy>
+                                  <columns>
+                                      <TableColumn fx:id="tbcProtocolNumberOnEvacuation" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Номер протокола" />
+                                      <TableColumn fx:id="tbcManufactureOnEvacuation" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Марка" />
+                                      <TableColumn fx:id="tbcCarIdOnEvacuation" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Рег.знак" />
+                                      <TableColumn fx:id="tbcPoliceDepartmentOnEvacuation" editable="false" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Район ГАИ" />
+                                      <TableColumn fx:id="tbcPolicemanOnEvacuation" editable="false" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" text="Сотрудник ГАИ" />
+                                      <TableColumn fx:id="tbcEvacuationDate" editable="false" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Дата эвакуации" />
+                                      <TableColumn fx:id="tbcClauseOnEvacuation" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Статья" />
+                                      <TableColumn fx:id="tbcRoadLawPointOnEvacuation" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" resizable="false" text="Пункт ПДД" />
+                                      <TableColumn fx:id="tbcParkingOnEvacuation" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Стоянка" />
+                                  </columns>
+                              </TableView>
+                      </VBox>
+              </AnchorPane>
+              <AnchorPane GridPane.columnSpan="2" GridPane.rowIndex="1">
+                      <VBox prefHeight="1311.0" prefWidth="760.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <Label text="На стоянке">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                              <TextField fx:id="txtOnParkingSearch" promptText="Введите параметры и нажмите Enter">
+                                  <VBox.margin>
+                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                  </VBox.margin>
+                              </TextField>
+                              <TableView fx:id="tblOnParking" VBox.vgrow="ALWAYS">
+                                  <columns>
+                                      <TableColumn fx:id="tbcProtocolNumberOnParking" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Номер протокола" />
+                                      <TableColumn fx:id="tbcManufactureOnParking" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Марка" />
+                                      <TableColumn fx:id="tbcCarIdOnParking" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Рег.знак" />
+                                      <TableColumn fx:id="tbcPoliceDepartmentOnParking" editable="false" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Район ГАИ" />
+                                      <TableColumn fx:id="tbcPolicemanOnParking" editable="false" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" text="Сотрудник ГАИ" />
+                                      <TableColumn fx:id="tbcParkingDate" editable="false" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Дата постановки" />
+                                      <TableColumn fx:id="tbcClauseOnParking" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Статья" />
+                                      <TableColumn fx:id="tbcRoadLawPoint" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" resizable="false" text="Пункт ПДД" />
+                                      <TableColumn fx:id="tbcParkingOnParking" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Стоянка" />
+                                  </columns>
+                                  <columnResizePolicy>
+                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                  </columnResizePolicy>
+                              </TableView>
+                      </VBox>
+              </AnchorPane>
+</GridPane>

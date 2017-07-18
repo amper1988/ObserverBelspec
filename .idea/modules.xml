@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Belspec.iml" filepath="$PROJECT_DIR$/.idea/modules/Belspec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Belspec_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Belspec_main.iml" group="Belspec" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Belspec_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Belspec_test.iml" group="Belspec" />
+    </modules>
+  </component>
+</project>
