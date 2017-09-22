@@ -23,13 +23,17 @@ import retrofit.model.test_connection.response.TestResponseEnvelope;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Header;
+import retrofit2.http.Headers;
 import retrofit2.http.POST;
 
 public interface RetrofitService {
 
     @POST("ws/ObserverServices")
     Call<TestResponseEnvelope> executeTestOperation(@Header("Authorization") String auth, @Body TestRequestEnvelope request);
-
+    @Headers({
+            "Content-Type: application/soap+xml",
+            "Accept-Charset: utf-8"
+    })
     @POST("ws/ObserverServices")
     Call<CheckUpdateObserverResponseEnvelope> executeCheckUpdateObserver(@Header("Authorization") String auth, @Body CheckUpdateObserverRequestEnvelope request);
 

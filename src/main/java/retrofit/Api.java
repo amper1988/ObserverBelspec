@@ -24,7 +24,7 @@ public class Api {
                 .connectTimeout(30000, TimeUnit.MILLISECONDS);
         httpClientBuilder.addInterceptor(interceptor);
         Retrofit restAdapter = new Retrofit.Builder()
-                .baseUrl("http://185.66.70.44:10101/stojanka/")
+                .baseUrl("http://185.66.69.93:10101/stojanka/")
                 .client(httpClientBuilder.build())
                 .addConverterFactory(SimpleXmlConverterFactory.create())
                 .build();
